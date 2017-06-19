@@ -8,13 +8,13 @@
 
 #### Convert
 convert scss to sass
-> sass-convert example.scss example.sass
+`sass-convert example.scss example.sass`
 
 convert sass to scss
-> sass-convert example.sass example.scss
+`sass-convert example.sass example.scss`
 
 convert scss to css
-> sass example.scss:example.css
+`sass example.scss:example.css`
 
 #### Watch
-> sass --watch example.scss:example.css
+`sass --watch example.scss:example.css`
