@@ -23,6 +23,25 @@ sass example.scss:example.css
 ```
 
 #### Watch
+watch file
 ```
 sass --watch example.scss:example.css
 ```
+watch directory
+```
+sass -watch Directory:CSS
+```
+
+#### Compact & Compressed & expanded
+```
+sass example.scss:example.css --style compact
+```
+```
+sass example.scss:example.css --style compressed
+```
+```
+sass example.scss:example.css --style expanded
+```
+
+sourcemap
+> --sourcemap=none
