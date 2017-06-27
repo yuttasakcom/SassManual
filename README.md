@@ -12,7 +12,7 @@
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
 ตรวจสอบเวอร์ชั่น พิมพ์คำสั่ง `sass -v`
 
-![sass version](./img/install_sass.gif)
+<img src="./img/install_sass.gif" />
 
 ## แปลงไฟล์
 แปลงไฟล์ .scss เป็น .sass พิมพ์คำสั่ง `sass-convert example.scss example.sass`<br>
