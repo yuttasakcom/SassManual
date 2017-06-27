@@ -7,6 +7,7 @@
 ## ติดตั้ง
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
 ตรวจสอบเวอร์ชั่น พิมพ์คำสั่ง `sass -v`
+
 ![sass version](https://github.com/yuttasakcom/sass101/blob/master/img/sass_version.png)
 
 ## แปลงไฟล์
