@@ -35,4 +35,4 @@ compressed directory พิมพ์คำสั่ง `sass scss:css --style co
 expanded file พิมพ์คำสั่ง `sass example.scss:example.css --style expanded`<br>
 expanded directory พิมพ์คำสั่ง `sass scss:css --style expanded`<br>
 
-_/*หมายเหตุ*/ กรณีไม่ต้องการไฟล์นามสกุล .map_ เพิ่ม option --sourcemap=none
+_/\*หมายเหตุ\*/ กรณีไม่ต้องการไฟล์นามสกุล .map_ เพิ่ม option --sourcemap=none
