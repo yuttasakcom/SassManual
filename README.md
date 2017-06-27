@@ -3,10 +3,10 @@
 ## สารบัญ
 - [ติดตั้ง](#ติดตั้ง)
 - [แปลงไฟล์](#แปลงไฟล์)
-- [Watcher](#Watcher)
-- [Compact](#Compact)
-- [Compressed](#Compressed)
-- [Expanded](#Expanded)
+- [Watcher](#watcher)
+- [Compact](#compact)
+- [Compressed](#compressed)
+- [Expanded](#expanded)
 
 ## ติดตั้ง
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
