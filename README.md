@@ -48,15 +48,17 @@ _/\*หมายเหตุ\*/ กรณีไม่ต้องการไฟ
 เปิด terminal#2 พิมพ์คำสั่ง `sass-convert scss/index.scss sass/index.sass`
 
 ## Variable
-.scss
 ```css
+.scss
+---
 $primary:#00ffc4;
 html {
     background: $primary;
 }
 ```
-.sass
 ```css
+.sass
+---
 $primary: #00ffc4
 html
   background: $primary
