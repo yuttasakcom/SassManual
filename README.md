@@ -3,6 +3,10 @@
 ## สารบัญ
 - [ติดตั้ง](#ติดตั้ง)
 - [แปลงไฟล์](#แปลงไฟล์)
+- [Watcher](#Watcher)
+- [Compact](#Compact)
+- [Compressed](#Compressed)
+- [Expanded](#Expanded)
 
 ## ติดตั้ง
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
@@ -19,11 +23,16 @@
 watch file พิมพ์คำสั่ง `sass --watch example.scss:example.css`
 watch directory พิมพ์คำสั่ง `sass --watch Directory:CSS`
 
-#### Compact & Compressed & expanded
+## Compact
 compact file พิมพ์คำสั่ง `sass example.scss:example.css --style compact`<br>
 compack directory พิมพ์คำสั่ง `sass scss:css --style compact`<br>
+
+## Compressed
 compressed file พิมพ์คำสั่ง `sass example.scss:example.css --style compressed`<br>
 compressed directory พิมพ์คำสั่ง `sass scss:css --style compressed`<br>
+
+## Expanded
 expanded file พิมพ์คำสั่ง `sass example.scss:example.css --style expanded`<br>
 expanded directory พิมพ์คำสั่ง `sass scss:css --style expanded`<br>
-_กรณีไม่ต้องการ .map_ เพิ่ม option --sourcemap=none
+
+_/*หมายเหตุ*/ กรณีไม่ต้องการไฟล์นามสกุล .map_ เพิ่ม option --sourcemap=none
