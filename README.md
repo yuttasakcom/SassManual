@@ -1,12 +1,13 @@
 ## Sass101
 
 ## สารบัญ
-- [ติดตั้ง](#ติดตั้ง)
-- [แปลงไฟล์](#แปลงไฟล์)
-- [Watcher](#watcher)
-- [Compact](#compact)
-- [Compressed](#compressed)
-- [Expanded](#expanded)
+- บทที่ 1
+  - [ติดตั้ง](#ติดตั้ง)
+  - [แปลงไฟล์](#แปลงไฟล์)
+  - [Watcher](#watcher)
+  - [Compact](#compact)
+  - [Compressed](#compressed)
+  - [Expanded](#expanded)
 
 ## ติดตั้ง
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
