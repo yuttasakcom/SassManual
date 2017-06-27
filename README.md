@@ -1,21 +1,15 @@
 ## Sass101
 
 ## สารบัญ
-- [การติดตั้ง](#ติดตั้ง on Linux(Ubuntu 16.04.2))
+- [Install](#install)
 - [Convert](#convert)
 
-### ติดตั้ง on Linux(Ubuntu 16.04.2)
-พิมพ์คำสั่ง
-> sudo apt install -y ruby-sass
+## Install
+พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
+ตรวจสอบเวอร์ชั่น พิมพ์คำสั่ง `sass -v`
 
-~ ตรวจสอบเวอร์ชั่น
-  พิมพ์คำสั่ง
-  > sass -v
-
-### Convert
-: แปลงไฟล์ .scss เป็น .sass
-  พิมพ์คำสั่ง
-  > sass-convert example.scss example.sass
+## Convert
+แปลงไฟล์ .scss เป็น .sass พิมพ์คำสั่ง `sass-convert example.scss example.sass`
 
 
 convert sass to scss
