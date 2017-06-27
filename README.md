@@ -9,6 +9,9 @@
   - [Compressed](#compressed)
   - [Expanded](#expanded)
 
+- บทที่ 2
+  - [Environment](#environment)
+
 ## Install
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
 ตรวจสอบเวอร์ชั่น พิมพ์คำสั่ง `sass -v`
@@ -22,7 +25,7 @@
 
 ## Watcher
 watch file พิมพ์คำสั่ง `sass --watch example.scss:example.css`<br>
-watch directory พิมพ์คำสั่ง `sass --watch Directory:CSS`
+watch directory พิมพ์คำสั่ง `sass --watch scss:css`
 
 ## Compact
 compact file พิมพ์คำสั่ง `sass example.scss:example.css --style compact`<br>
@@ -37,3 +40,21 @@ expanded file พิมพ์คำสั่ง `sass example.scss:example.css -
 expanded directory พิมพ์คำสั่ง `sass scss:css --style expanded`<br>
 
 _/\*หมายเหตุ\*/ กรณีไม่ต้องการไฟล์นามสกุล .map_ เพิ่ม option --sourcemap=none
+
+## Environment
+สร้าง folder css, scss, sass<br>
+เปิด terminal#1 พิมพ์คำสั่ง `sass --watch scss:css --style expanded --sourcemap=none`<br>
+เปิด terminal#2 พิมพ์คำสั่ง `sass-convert scss/index.scss sass/index.sass`
+
+## Variable
+```css
+$primary:#00ffc4;
+html {
+    background: $primary;
+}
+```
+```css
+$primary: #00ffc4
+html
+  background: $primary
+```
