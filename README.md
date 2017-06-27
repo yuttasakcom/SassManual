@@ -11,39 +11,19 @@
 ![sass version](https://github.com/yuttasakcom/sass101/blob/master/img/install_sass.gif)
 
 ## แปลงไฟล์
-แปลงไฟล์ .scss เป็น .sass พิมพ์คำสั่ง `sass-convert example.scss example.sass`
+แปลงไฟล์ .scss เป็น .sass พิมพ์คำสั่ง `sass-convert example.scss example.sass`<br>
+แปลไฟล์ .sass เป็น .scss พิมพ์คำสั่ง `sass-convert example.sass example.scss`<br>
+แปลงไฟล์ .scss เป็น .css พิมพ์คำสั่ง `sass example.scss:example.css`
 
-
-convert sass to scss
-```
-sass-convert example.sass example.scss
-```
-
-convert scss to css
-```
-sass example.scss:example.css
-```
-
-#### Watch
-watch file
-```
-sass --watch example.scss:example.css
-```
-watch directory
-```
-sass --watch Directory:CSS
-```
+#### Watcher
+watch file พิมพ์คำสั่ง `sass --watch example.scss:example.css`
+watch directory พิมพ์คำสั่ง `sass --watch Directory:CSS`
 
 #### Compact & Compressed & expanded
-```
-sass example.scss:example.css --style compact
-```
-```
-sass example.scss:example.css --style compressed
-```
-```
-sass example.scss:example.css --style expanded
-```
-
-sourcemap
-> --sourcemap=none
+compact file พิมพ์คำสั่ง `sass example.scss:example.css --style compact`<br>
+compack directory พิมพ์คำสั่ง `sass scss:css --style compact`<br>
+compressed file พิมพ์คำสั่ง `sass example.scss:example.css --style compressed`<br>
+compressed directory พิมพ์คำสั่ง `sass scss:css --style compressed`<br>
+expanded file พิมพ์คำสั่ง `sass example.scss:example.css --style expanded`<br>
+expanded directory พิมพ์คำสั่ง `sass scss:css --style expanded`<br>
+_กรณีไม่ต้องการ .map_ เพิ่ม option --sourcemap=none
