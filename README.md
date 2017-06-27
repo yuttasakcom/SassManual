@@ -1,10 +1,14 @@
 ## Sass101
 
-### ติดตั้ง on Ubuntu
+## สารบัญ
+- [การติดตั้ง](#ติดตั้ง on Linux(Ubuntu 16.04.2))
+- [Convert](#convert)
+
+### ติดตั้ง on Linux(Ubuntu 16.04.2)
 พิมพ์คำสั่ง
 > sudo apt install -y ruby-sass
 
-: ตรวจสอบเวอร์ชั่น
+~ ตรวจสอบเวอร์ชั่น
   พิมพ์คำสั่ง
   > sass -v
 
