@@ -1,16 +1,17 @@
-Sass101
+## Sass101
 
-## ติดตั้ง on Ubuntu
+### ติดตั้ง on Ubuntu
 พิมพ์คำสั่ง
 > sudo apt install -y ruby-sass
-ตรวจสอบเวอร์ชั่น
-พิมพ์คำสั่ง
-> sass -v
 
-## Convert
-แปลงไฟล์ .scss เป็น .sass
-พิมพ์คำสั่ง
-> sass-convert example.scss example.sass
+: ตรวจสอบเวอร์ชั่น
+  พิมพ์คำสั่ง
+  > sass -v
+
+### Convert
+: แปลงไฟล์ .scss เป็น .sass
+  พิมพ์คำสั่ง
+  > sass-convert example.scss example.sass
 
 
 convert sass to scss
