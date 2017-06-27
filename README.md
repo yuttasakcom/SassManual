@@ -1,16 +1,17 @@
-# Sass
+Sass101
 
-#### ติดตั้ง on Ubuntu
+## ติดตั้ง on Ubuntu
+พิมพ์คำสั่ง
 > sudo apt install -y ruby-sass
-
 ตรวจสอบเวอร์ชั่น
+พิมพ์คำสั่ง
 > sass -v
 
-#### Convert
-convert scss to sass
-```
-sass-convert example.scss example.sass
-```
+## Convert
+แปลงไฟล์ .scss เป็น .sass
+พิมพ์คำสั่ง
+> sass-convert example.scss example.sass
+
 
 convert sass to scss
 ```
@@ -29,7 +30,7 @@ sass --watch example.scss:example.css
 ```
 watch directory
 ```
-sass -watch Directory:CSS
+sass --watch Directory:CSS
 ```
 
 #### Compact & Compressed & expanded
