@@ -11,6 +11,7 @@
 
 - บทที่ 2
   - [Environment](#environment)
+  - [Variable](#variable)
 
 ## Install
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
@@ -47,12 +48,14 @@ _/\*หมายเหตุ\*/ กรณีไม่ต้องการไฟ
 เปิด terminal#2 พิมพ์คำสั่ง `sass-convert scss/index.scss sass/index.sass`
 
 ## Variable
+.scss
 ```css
 $primary:#00ffc4;
 html {
     background: $primary;
 }
 ```
+.sass
 ```css
 $primary: #00ffc4
 html
