@@ -1,14 +1,14 @@
 ## Sass101
 
 ## สารบัญ
-- [Install](#install)
-- [Convert](#convert)
+- [ติดตั้ง](#ติดตั้ง)
+- [แปลงไฟล์](#แปลงไฟล์)
 
-## Install
+## ติดตั้ง
 พิมพ์คำสั่ง `sudo apt install -y ruby-sass`
 ตรวจสอบเวอร์ชั่น พิมพ์คำสั่ง `sass -v`
 
-## Convert
+## แปลงไฟล์
 แปลงไฟล์ .scss เป็น .sass พิมพ์คำสั่ง `sass-convert example.scss example.sass`
 
 
