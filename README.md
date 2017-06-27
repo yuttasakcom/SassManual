@@ -20,7 +20,7 @@
 แปลงไฟล์ .scss เป็น .css พิมพ์คำสั่ง `sass example.scss:example.css`
 
 ## Watcher
-watch file พิมพ์คำสั่ง `sass --watch example.scss:example.css`
+watch file พิมพ์คำสั่ง `sass --watch example.scss:example.css`<br>
 watch directory พิมพ์คำสั่ง `sass --watch Directory:CSS`
 
 ## Compact
