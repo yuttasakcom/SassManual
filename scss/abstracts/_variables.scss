@@ -1,25 +1,15 @@
-// Initialize a global variable at root level.
-$variable: 'initial value';
-
-// Create a mixin that overrides that global variable.
-@mixin global-variable-overriding {
-  $variable: 'mixin value' !global;
-}
-
-.local-scope::before {
-  // Create a local variable that shadows the global one.
-  $variable: 'local value';
-
-  // Include the mixin: it overrides the global variable.
-  @include global-variable-overriding;
-
-  // Print the variable’s value.
-  // It is the **local** one, since it shadows the global one.
-  content: $variable;
-}
-
-// Print the variable in another selector that does no shadowing.
-// It is the **global** one, as expected.
-.other-local-scope::before {
-  content: $variable;
-}
+// colors
+$color-blue: blue;
+$color-silver: silver;
+$color-red: red;
+$color-lime: lime;
+$color-yellow: yellow;
+$color-black: black;
+$color-white: white;
+$color-aqua: aqua;
+$color-green: green;
+$color-orange: orange;
+$color-gray: gray;
+$color-pink: pink;
+$color-deeppink: deeppink;
+$color-blueviolet: blueviolet;
