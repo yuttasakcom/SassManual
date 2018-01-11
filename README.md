@@ -6,7 +6,7 @@
 
 * [Setup](#setup)
 * [7-1 CSS Architecture with Sass](#architecture)
-* Variables
+* [Variables](#variables)
 * Nesting
 * Operators
 * Partials and imports
@@ -46,10 +46,14 @@ sass
 |_components
 |_layout
 |_pages
+|_themes
+|_vendors
 |_main.scss
 ```
 
 ## Variables
+
+### Scoping
 
 ```scss
 // Initialize a global variable at root level.
