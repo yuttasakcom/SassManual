@@ -34,14 +34,17 @@ npm run dev
 sass/
 |
 |– abstracts/
-|   |– _variables.scss    # Sass Variables
 |   |– _functions.scss    # Sass Functions
 |   |– _mixins.scss       # Sass Mixins
 |   |– _placeholders.scss # Sass Placeholders
+|   |– _variables.scss    # Sass Variables
 |
 |– base/
-|   |– _reset.scss        # Reset/normalize
+|   |– _animations.scss   # Animations
+|   |– _base.scss         # Base
 |   |– _typography.scss   # Typography rules
+|   |– _reset.scss        # Reset/normalize
+|   |– _utilities.scss    # Utitlites
 |   …                     # Etc.
 |
 |– components/
@@ -107,5 +110,42 @@ $variable: 'initial value';
 // It is the **global** one, as expected.
 .other-local-scope::before {
   content: $variable;
+}
+```
+
+### !default Flag
+
+```scss
+$baseline: 1em !default;
+```
+
+### !global Flag
+
+```scss
+$baseline: 2em !global;
+```
+
+### Multiple Variables Or Maps
+
+```scss
+/// Z-indexes map, gathering all Z layers of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Layer’s name
+/// @prop {Number} value - Z value mapped to the key
+$z-indexes: (
+  'modal': 5000,
+  'dropdown': 4000,
+  'default': 1,
+  'below': -1
+);
+
+/// Get a z-index value from a layer name
+/// @access public
+/// @param {String} $layer - Layer’s name
+/// @return {Number}
+/// @require $z-indexes
+@function z($layer) {
+  @return map-get($z-indexes, $layer);
 }
 ```
