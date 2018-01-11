@@ -30,6 +30,8 @@ npm run dev
 
 ## Architecture
 
+> 7-1 pattern
+
 ```
 sass/
 |
