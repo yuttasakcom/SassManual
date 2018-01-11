@@ -85,6 +85,18 @@ sass/
 
 ## Variables
 
+### !default Flag
+
+```scss
+$baseline: 1em !default;
+```
+
+### !global Flag
+
+```scss
+$baseline: 2em !global;
+```
+
 ### Scoping
 
 ```scss
@@ -113,18 +125,6 @@ $variable: 'initial value';
 .other-local-scope::before {
   content: $variable;
 }
-```
-
-### !default Flag
-
-```scss
-$baseline: 1em !default;
-```
-
-### !global Flag
-
-```scss
-$baseline: 2em !global;
 ```
 
 ### Multiple Variables Or Maps

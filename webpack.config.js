@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const resolve = dir => path.resolve(__dirname, dir)
 
@@ -12,7 +13,13 @@ const config = {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.scss/, use: ['style-loader', 'css-loader', 'sass-loader'] }
+      {
+        test: /\.scss/,
+        use: ExtractTextPlugin.extract({
+          use: ['css-loader', 'sass-loader'],
+          fallback: 'style-loader'
+        })
+      }
     ]
   },
   plugins: [
@@ -24,7 +31,8 @@ const config = {
         collapseWhitespace: true,
         removeAttributeQuotes: true
       }
-    })
+    }),
+    new ExtractTextPlugin('styles.css')
   ]
 }
 
