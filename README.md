@@ -2,15 +2,17 @@
 
 ## Table of Contents
 
-* Install
+* Setup
 
-## Install
+## Setup
 
 ```
-npm i -S node-sass
+# clone project
+git clone git@github.com:yuttasakcom/SassManual.git && cd SassManual
 
-# script for run npm run dev
-"scripts": {
-  "dev": "node-sass scss/main.scss css/styles.css -w"
-},
+# install package
+npm install
+
+# start development
+npm run dev
 ```
