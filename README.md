@@ -2,7 +2,8 @@
 
 ## Table of Contents
 
-* Setup
+* [Setup](#setup)
+* [7-1 CSS Architecture with Sass](#architecture)
 
 ## Setup
 
@@ -16,3 +17,5 @@ npm install
 # start development
 npm run dev
 ```
+
+## Architecture
