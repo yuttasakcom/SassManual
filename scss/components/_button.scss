@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: normal;
+  height: 30px;
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  @include button-variant($color-white, $color-primary);
+}
+
+.btn-secondary {
+  @include button-variant($color-black, $color-secondary);
+}
+
+.btn-danger {
+  @include button-variant($color-white, $color-danger);
+}
+
+.btn-success {
+  @include button-variant($color-black, $color-success);
+}
+
+.btn-warning {
+  @include button-variant($color-black, $color-warning);
+}
+
+.btn-info {
+  @include button-variant($color-black, $color-info);
+}
+
+.btn-dark {
+  @include button-variant($color-white, $color-dark);
+}
+
+.btn-light {
+  @include button-variant($color-black, $color-light);
+}
