@@ -46,4 +46,5 @@ sass
 |_components
 |_layout
 |_pages
+|_main.scss
 ```
