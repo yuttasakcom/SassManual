@@ -85,6 +85,10 @@ sass/
 
 ## Variables
 
+```scss
+$variable: 'initial value';
+```
+
 ### !default Flag
 
 ```scss
