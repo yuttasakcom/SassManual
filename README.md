@@ -7,7 +7,7 @@
 * [Setup](#setup)
 * [7-1 CSS Architecture with Sass](#architecture)
 * [Variables](#variables)
-* Nesting
+* [Nesting](#nesting)
 * Operators
 * Partials and imports
 * Mixins
@@ -153,5 +153,25 @@ $z-indexes: (
 /// @require $z-indexes
 @function z($layer) {
   @return map-get($z-indexes, $layer);
+}
+```
+
+## Nesting
+
+```scss
+// <div class="foo"><div class="bar">Text</div></div>
+// .foo .bar {}
+.foo {
+  .bar {
+    // &:hover = .bar:hover
+    &:hover {
+      color: red;
+
+      // &::before = .bar:hover::before
+      &::before {
+        content: 'pseudo-element';
+      }
+    }
+  }
 }
 ```
