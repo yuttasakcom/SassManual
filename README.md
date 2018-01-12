@@ -10,8 +10,8 @@
 * [Nesting](#nesting)
 * Operators
 * Partials and imports
-* Mixins
-* Functions
+* [Mixins](#mixins)
+* [Functions](#functions)
 * Extends
 * Control directives
 
@@ -173,5 +173,77 @@ $z-indexes: (
       }
     }
   }
+}
+```
+
+## Mixins
+
+```scss
+// Ext 1
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.foo {
+  @include clearfix;
+}
+
+// Ext 2
+@mixin set-color($color: black) {
+  color: $color;
+}
+
+.bar {
+  @include set-color(white);
+}
+
+// Ext 3
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+.shadows {
+  @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+
+// Ext 4
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+
+$values: #ff0000, #00ff00, #0000ff;
+.primary {
+  @include colors($values...);
+}
+
+$value-map: (
+  text: #00ff00,
+  background: #0000ff,
+  border: #ff0000
+);
+.secondary {
+  @include colors($value-map...);
+}
+```
+
+## Functions
+
+```scss
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+
+#sidebar {
+  width: grid-width(5);
 }
 ```
