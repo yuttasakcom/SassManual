@@ -12,7 +12,7 @@
 * Partials and imports
 * [Mixins](#mixins)
 * [Functions](#functions)
-* Extends
+* [Extends](#extends)
 * Control directives
 
 ## Setup
@@ -245,5 +245,22 @@ $gutter-width: 10px;
 
 #sidebar {
   width: grid-width(5);
+}
+```
+
+## Extends
+
+```scss
+%extend-name {
+  ...
+}
+
+// .foo, .bar {}
+.foo {
+  @extend %extend-name;
+}
+
+.bar {
+  @extend %extend-name;
 }
 ```
