@@ -13,7 +13,7 @@
 * [Mixins](#mixins)
 * [Functions](#functions)
 * [Extends](#extends)
-* Control directives
+* [Control directives](#control-directives)
 
 ## Setup
 
@@ -262,5 +262,144 @@ $gutter-width: 10px;
 
 .bar {
   @extend %extend-name;
+}
+```
+
+## Control directives
+
+### if()
+
+```scss
+if(true, 1px, 2px) => 1px
+if(false, 1px, 2px) => 2px
+```
+
+### @if
+
+```scss
+// Ext 1
+p {
+  @if 1 + 1 == 2 {
+    border: 1px solid;
+  }
+  @if 5 < 3 {
+    border: 2px dotted;
+  }
+  @if null {
+    border: 3px double;
+  }
+}
+
+//output
+p {
+  border: 1px solid;
+}
+
+// Ext 2
+$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+//output
+p {
+  color: green;
+}
+```
+
+### @for
+
+```scss
+@for $i from 1 through 3 {
+  .item-#{$i} {
+    width: 2em * $i;
+  }
+}
+
+//output
+.item-1 {
+  width: 2em;
+}
+.item-2 {
+  width: 4em;
+}
+.item-3 {
+  width: 6em;
+}
+```
+
+### @each
+
+```scss
+// Ext 1
+@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+
+//output
+.puma-icon {
+  background-image: url('/images/puma.png');
+}
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png');
+}
+.egret-icon {
+  background-image: url('/images/egret.png');
+}
+.salamander-icon {
+  background-image: url('/images/salamander.png');
+}
+
+// Ext 2
+@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+//output
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.2em;
+}
+```
+
+### @while
+
+```scss
+$i: 6;
+@while $i > 0 {
+  .item-#{$i} {
+    width: 2em * $i;
+  }
+  $i: $i - 2;
+}
+
+//output
+.item-6 {
+  width: 12em;
+}
+
+.item-4 {
+  width: 8em;
+}
+
+.item-2 {
+  width: 4em;
 }
 ```
